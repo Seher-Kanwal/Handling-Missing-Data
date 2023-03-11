@@ -37,5 +37,45 @@ Missing data can be a significant problem in machine learning as it can result i
 
 # 1. Complete Case Analysis (Deleting Rows with missing values)
 
+Complete case analysis (CCA) is a technique used in machine learning and data analysis to handle missing values in a dataset. It involves removing all observations or data points that have missing values from the dataset. 
 
+The main advantage of CCA is that:
+- It is simple 
+- Easy to implement. 
+
+When using CCA, the first step is to identify the missing values in the dataset. Once the missing values have been identified, the rows or observations that contain missing values are removed from the dataset. This can be done using the dropna() function in Python or using the na.omit() function in R.
+
+## When to use?
+
+It is important to note that CCA should only be used when the missing values are completely at random (MCAR). This means that the probability of a value being missing is the same for all observations and there is no relationship between the missingness and any other variables in the dataset. 
+If the missing values are not MCAR, CCA can lead to biased results and loss of important information. In such cases, other techniques such as imputation or multiple imputation may be more appropriate.
+
+## Disadvantages
+While complete case analysis (CCA) is a simple and commonly used method for handling missing values in machine learning, it has several disadvantages:
+
+- __Biased results__ 
+  
+  CCA can lead to biased results if the missing data is not missing completely at random (MCAR). If the missingness is related to other variables in the dataset, the analysis will only consider the subset of the data with no missing values, which may not be representative of the entire dataset.
+
+- __Loss of information__
+
+  By removing observations with missing values, CCA discards potentially valuable information that may be important for analysis.
+
+- __Reduced sample size__
+   
+   CCA reduces the sample size, which can lead to reduced statistical power and increased uncertainty in the estimates.
+
+- __Increased risk of type II error__
+
+   By reducing the sample size, CCA can increase the risk of type II errors, where a null hypothesis is not rejected when it should be.
+
+- __Limitations on the use of advanced machine learning techniques__
+
+  CCA may not be compatible with some advanced machine learning techniques, such as deep learning, that require complete datasets for training.
+
+- __Practical difficulties__
+  
+  CCA can be impractical when the proportion of missing data is large, which may result in the loss of a substantial amount of data.
+
+Overall, while CCA is a simple and straightforward method for handling missing data, it should be used with caution and only when the data is missing completely at random. In cases where missing data is not missing completely at random, more advanced imputation techniques may be necessary to produce accurate results.
 
