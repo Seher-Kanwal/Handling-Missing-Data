@@ -79,3 +79,15 @@ While complete case analysis (CCA) is a simple and commonly used method for hand
 
 Overall, while CCA is a simple and straightforward method for handling missing data, it should be used with caution and only when the data is missing completely at random. In cases where missing data is not missing completely at random, more advanced imputation techniques may be necessary to produce accurate results.
 
+
+# Using mean and Median for dealing with missing values
+
+Replacing missing values with mean or median is a common strategy in machine learning when dealing with numerical data. However, there are certain situations where using mean or median may not be appropriate. Here are some guidelines on when to use mean or median to replace missing values:
+
+## Mean
+Mean is a good choice when the data is normally distributed or has a symmetric distribution without any extreme outliers. In such cases, the mean is a representative value of the data, and replacing missing values with the mean can preserve the overall distribution of the data.
+
+
+## Median
+Median is a better choice when the data is skewed or has extreme outliers. In such cases, the median is a more robust measure of central tendency than the mean, and it is less affected by extreme values. Replacing missing values with the median can help prevent the influence of outliers on the model's performance.
+
