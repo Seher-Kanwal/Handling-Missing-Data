@@ -91,3 +91,5 @@ Mean is a good choice when the data is normally distributed or has a symmetric d
 ## Median
 Median is a better choice when the data is skewed or has extreme outliers. In such cases, the median is a more robust measure of central tendency than the mean, and it is less affected by extreme values. Replacing missing values with the median can help prevent the influence of outliers on the model's performance.
 
+
+
