@@ -82,6 +82,9 @@ Overall, while CCA is a simple and straightforward method for handling missing d
 
 # Using mean and Median for dealing with missing values
 
+![image](https://user-images.githubusercontent.com/92606737/224914359-780d34e7-7565-423b-9587-f733a0f8f5e7.png)
+
+
 Replacing missing values with mean or median is a common strategy in machine learning when dealing with numerical data. However, there are certain situations where using mean or median may not be appropriate. Here are some guidelines on when to use mean or median to replace missing values:
 
 ## Mean
@@ -90,6 +93,16 @@ Mean is a good choice when the data is normally distributed or has a symmetric d
 
 ## Median
 Median is a better choice when the data is skewed or has extreme outliers. In such cases, the median is a more robust measure of central tendency than the mean, and it is less affected by extreme values. Replacing missing values with the median can help prevent the influence of outliers on the model's performance.
+
+
+# Using a Random Constant
+![image](https://user-images.githubusercontent.com/92606737/224913052-58cb844e-3b39-4e5f-9705-c021bec0d8ee.png)
+
+However, there are certain situations where filling missing values with a random constant may be appropriate. For example, if the missing values are in a categorical variable, replacing them with a random value can help maintain the balance of categories in the dataset. In this case, it is important to ensure that the random values are chosen from the same distribution as the other values in the variable.
+
+Another situation where filling missing values with a random constant may be useful is when the missing values are in a small proportion of the dataset and do not have a significant impact on the overall performance of the machine learning model. In this case, replacing them with a random value can be a simple and quick solution.
+
+Filling missing values with a random constant in machine learning is generally not recommended as it can introduce noise and bias in the dataset. When missing values are replaced with a random value, it is possible that this value may not be representative of the underlying distribution of the data and could lead to inaccurate predictions.
 
 
 
