@@ -103,3 +103,5 @@ However, there are certain situations where filling missing values with a random
 Another situation where filling missing values with a random constant may be useful is when the missing values are in a small proportion of the dataset and do not have a significant impact on the overall performance of the machine learning model. In this case, replacing them with a random value can be a simple and quick solution.
 
 Filling missing values with a random constant in machine learning is generally not recommended as it can introduce noise and bias in the dataset. When missing values are replaced with a random value, it is possible that this value may not be representative of the underlying distribution of the data and could lead to inaccurate predictions.
+
+
