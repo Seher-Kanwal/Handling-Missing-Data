@@ -104,4 +104,10 @@ Another situation where filling missing values with a random constant may be use
 
 Filling missing values with a random constant in machine learning is generally not recommended as it can introduce noise and bias in the dataset. When missing values are replaced with a random value, it is possible that this value may not be representative of the underlying distribution of the data and could lead to inaccurate predictions.
 
+# Random imputation
+
+Random imputation is a simple technique that involves filling in missing values with randomly selected values from the remaining data in the same column. This method assumes that the missing values are missing completely at random, which means that the probability of a value being missing is independent of the value itself and of any other variables in the dataset.
+
+While random imputation is a quick and easy way to handle missing values, it does have its limitations. For example, it can lead to biased estimates if the missing values are not missing completely at random. In addition, if there are many missing values in a dataset, random imputation may not be the best approach, as it can result in a significant amount of data loss.
+
 
