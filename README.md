@@ -111,3 +111,21 @@ Random imputation is a simple technique that involves filling in missing values 
 While random imputation is a quick and easy way to handle missing values, it does have its limitations. For example, it can lead to biased estimates if the missing values are not missing completely at random. In addition, if there are many missing values in a dataset, random imputation may not be the best approach, as it can result in a significant amount of data loss.
 
 
+# Missing Indicator
+
+![image](https://user-images.githubusercontent.com/92606737/226079380-13f760f5-3baf-47e6-b954-c4a6b1d0419b.png)
+
+The missing indicator technique is a method used in machine learning to handle missing data in a dataset. It involves creating a binary variable (i.e., a variable that takes on the value of either 0 or 1) to indicate whether a particular feature or attribute is missing for a given observation.
+
+To use the missing indicator technique, first, we identify the variables in our dataset that have missing values. Then, we create a new binary variable for each of these variables, with a value of 1 indicating that the value is missing and 0 indicating that it is present. This new variable is added to the dataset, and the missing values are left as missing.
+
+We can then use this new binary variable in our machine learning algorithm to help us handle the missing values. For example, we could use it as a feature in a regression model to predict the target variable.
+
+#### Advantage:
+One advantage of using the missing indicator technique is that it allows us to preserve the information about the missing values in our dataset, rather than simply deleting or imputing them. This can be useful in situations where the fact that a value is missing is itself informative or where we want to understand the patterns of missingness in our data.
+
+#### Disadvantage:
+However, a disadvantage of this technique is that it can increase the dimensionality of our dataset, which can make it more difficult to train our machine learning model or lead to overfitting. Additionally, if the missingness is not completely at random, including the missing indicator variable could introduce bias into our model.
+
+
+
