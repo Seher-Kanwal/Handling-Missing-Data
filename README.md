@@ -128,6 +128,9 @@ One advantage of using the missing indicator technique is that it allows us to p
 However, a disadvantage of this technique is that it can increase the dimensionality of our dataset, which can make it more difficult to train our machine learning model or lead to overfitting. Additionally, if the missingness is not completely at random, including the missing indicator variable could introduce bias into our model.
 
 
+# KNN Imputer 
+![image](https://user-images.githubusercontent.com/92606737/226499670-ae35dee0-744f-49eb-bca3-79cfc64b072a.png)
+
 
 
 
