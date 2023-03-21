@@ -130,8 +130,31 @@ However, a disadvantage of this technique is that it can increase the dimensiona
 
 # KNN Imputer 
 ![image](https://user-images.githubusercontent.com/92606737/226499670-ae35dee0-744f-49eb-bca3-79cfc64b072a.png)
+KNN (K-Nearest Neighbors) imputation is a technique used in machine learning for handling missing values in a dataset.
 
+In KNN imputation, the missing values are filled by imputing the average of the K nearest data points. The algorithm identifies the K nearest neighbors based on the similarity between the data points using a distance metric such as Euclidean distance or Manhattan distance.
 
+#### if other Column of the same record have missing value than:
 
+If there are missing values in other columns of the same record for which you want to predict a value using KNN imputer, you would need to first impute the missing values in the other columns before using KNN imputer to predict the target value.
+
+### Value of k:
+It is important to note that the value of K, which is the number of nearest neighbors used for imputation, can be chosen based on the size and complexity of the dataset, and the degree of sparsity of the missing values. A larger K value may be suitable for less sparse datasets, while a smaller K value may be more appropriate for more sparse datasets. Additionally, the choice of distance metric can also impact the results of the KNN imputation.
+
+# Benefits:
+
+- Easy to implement: KNN imputer is a simple and easy-to-implement imputation method that does not require a lot of computation.
+
+- Preserves distribution: KNN imputer preserves the distribution of the data, as it uses the values of similar data points to impute missing values. This can help avoid bias in the imputed values.
+
+- Suitable for small datasets: KNN imputer works well for small datasets with low dimensionality, as it can be computationally expensive for large datasets.
+
+Disadvantages:
+
+- Sensitive to outliers: KNN imputer is sensitive to outliers in the dataset, as it uses the values of the K nearest neighbors to impute missing values. Outliers can significantly impact the imputed values, especially if K is small.
+
+- Requires normalization: KNN imputer requires that the data be normalized, as it is distance-based. If the data is not normalized, features with larger scales can dominate the distance calculations.
+
+- Can lead to overfitting: KNN imputer can lead to overfitting if the number of nearest neighbors (K) is too small. This can result in imputed values that are too similar to the values of the nearest neighbors and may not be representative of the true underlying distribution.
 
 
