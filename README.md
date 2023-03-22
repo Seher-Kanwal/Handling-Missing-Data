@@ -158,3 +158,25 @@ Disadvantages:
 - Can lead to overfitting: KNN imputer can lead to overfitting if the number of nearest neighbors (K) is too small. This can result in imputed values that are too similar to the values of the nearest neighbors and may not be representative of the true underlying distribution.
 
 
+# MICE 
+![image](https://user-images.githubusercontent.com/92606737/226785379-3232fdc7-8274-4176-93ae-ae42f8ab590b.png)
+
+The MICE (Multivariate Imputation by Chained Equations) algorithm is a popular method for imputing missing values in a dataset using multiple imputations. It works by imputing missing values one variable at a time, while taking into account the correlations between variables.
+
+## Steps
+The basic steps of the MICE algorithm are as follows:
+
+- Identify the variables with missing values.
+- For each variable with missing values, create a regression model using the other variables in the dataset.
+- Use the regression model to impute the missing values for that variable.
+- Repeat steps 2 and 3 for all variables with missing values until convergence is achieved.
+- Repeat steps 2-4 multiple times (typically between 5-10) to generate multiple imputations.
+- Pool the results of the multiple imputations to obtain a single imputed dataset.
+![image](https://user-images.githubusercontent.com/92606737/226785206-5eda5d11-dee6-4ade-bb7c-c510bb4db013.png)
+
+
+## Advantages:
+The MICE algorithm has several advantages over other imputation methods. It can handle missing values in both continuous and categorical variables, and it can also handle missing values that are not missing completely at random (MCAR). Additionally, it can account for the correlations between variables, which can improve the accuracy of the imputations.
+
+## Disadvantages
+However, the MICE algorithm also has some limitations. It can be computationally expensive, especially for large datasets with many variables. It also assumes that the missing values are missing at random (MAR), which may not always be the case. Finally, it can be sensitive to the choice of regression model used for imputing missing values.
