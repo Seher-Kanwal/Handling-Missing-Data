@@ -180,3 +180,5 @@ The MICE algorithm has several advantages over other imputation methods. It can 
 
 ## Disadvantages
 However, the MICE algorithm also has some limitations. It can be computationally expensive, especially for large datasets with many variables. It also assumes that the missing values are missing at random (MAR), which may not always be the case. Finally, it can be sensitive to the choice of regression model used for imputing missing values.
+
+
